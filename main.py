@@ -39,10 +39,10 @@ def main():
     
     except FileNotFoundError:
         print('файл не найден')
-        logging.info("ОШИБКА файл не найден")
+        logging.error("ОШИБКА файл не найден")
     except ValueError as q:
         print(q)
-        logging.info("ОШИБКА файл пустой/не тот тип данных")
+        logging.error("ОШИБКА файл пустой/не тот тип данных")
     finally:
         logging.info("работа окончена")
 
