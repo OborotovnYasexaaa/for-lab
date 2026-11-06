@@ -17,6 +17,7 @@ class Garage:
         print('Транспорт в гараже:')
         for vehicle in self.vehicles:
             print(vehicle)
+            print('----------------------------------------------------------------------')
 
     def find_by_brand(self,brand):
         return [vehicle for vehicle in self.vehicles if vehicle.brand==brand]

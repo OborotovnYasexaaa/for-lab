@@ -17,6 +17,26 @@ def main():
     garage.add_vehicle(motorcycle)
     garage.add_vehicle(bus)
 
+
+    car.accelerate(120)
+    truck.accelerate(20)
+    motorcycle.accelerate(110)
+    bus.accelerate(30)
+    
+    for vehicle in garage.vehicles:
+        print(vehicle.move())
+        print(vehicle.get_info())
+        print('----------------------------------------------------------------------')
+    print()
+    print()
+    print()
+    car.stop()
+    truck.stop()
+    motorcycle.stop()
+    bus.stop()
+    
+    
+    
     garage.show_all()
 
 
