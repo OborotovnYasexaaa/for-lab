@@ -14,6 +14,7 @@ class Garage:
 
 
     def show_all(self):
+        print('Транспорт в гараже:')
         for vehicle in self.vehicles:
             print(vehicle)
 
