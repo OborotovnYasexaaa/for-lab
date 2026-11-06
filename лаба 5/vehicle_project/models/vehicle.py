@@ -22,10 +22,14 @@ class Vehicle(ABC):
 
     
     def accelerate(self,value):#скорость увелич
+        if value<0:
+            raise ValueError('значение не может быть отрицательным')
         self.speed+=value
     
     
     def brake(self,value):#скорость уменьшение но не меньше 0
+        if value<0:
+            raise ValueError('значение не может быть отрицательным')
         self.speed=max(0,self.speed-value)
 
 
